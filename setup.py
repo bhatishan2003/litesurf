@@ -1,12 +1,27 @@
 #!/usr/bin/env python3
 
 from setuptools import setup, find_packages
+from pathlib import Path
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+# Base directory of this file
+BASE_DIR = Path(__file__).resolve().parent
 
-with open("requirements.txt", "r", encoding="utf-8") as fh:
-    requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+
+# Helper function to read requirements from a file
+def read_requirements(filename):
+    path = BASE_DIR / filename
+    if not path.exists():
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip() and not line.startswith("#")]
+
+
+# Read README.md for long description
+long_description = (BASE_DIR / "README.md").read_text(encoding="utf-8")
+
+# Optional test/dev requirements
+default_requires = read_requirements("requirements/requirements.txt")
+dev_requires = read_requirements("requirements/requirements_dev.txt")
 
 setup(
     name="minibrowser",
@@ -31,7 +46,8 @@ setup(
         "Programming Language :: Python :: 3.11",
     ],
     python_requires=">=3.7",
-    install_requires=requirements,
+    install_requires=default_requires,
+    extras_require={"dev": dev_requires},
     entry_points={
         "console_scripts": [
             "minibrowser=minibrowser.cli:cli",

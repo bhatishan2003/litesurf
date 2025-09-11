@@ -1,5 +1,0 @@
-requests 
-Pillow 
-dukpy 
-colorama 
-rich 
