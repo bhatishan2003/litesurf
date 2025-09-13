@@ -6,7 +6,7 @@
 litesurf documentation
 ======================
 
- A simple Python CLI tool to create a basic web browser. 
+ A simple Python CLI tool to create a basic web browser.
 
 .. image:: https://img.shields.io/pypi/v/litesurf.svg?color=blue
    :target: https://pypi.org/project/litesurf/
@@ -24,12 +24,16 @@ litesurf documentation
    :target: https://github.com/bhatishan2003/litesurf/actions/workflows/python-app.yml
    :alt: CI
 
+.. image:: https://github.com/bhatishan2003/litesurf/actions/workflows/sphinx.yml/badge.svg
+   :target: https://github.com/bhatishan2003/litesurf/actions/workflows/sphinx.yml
+   :alt: Build and Deploy Sphinx docs
+
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    usage
-   installation 
+   installation
    testing
-
