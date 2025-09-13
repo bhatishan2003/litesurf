@@ -82,9 +82,9 @@ You can generate platform-specific standalone executables for your MiniBrowser p
 
 ### 1. Install PyInstaller
 
-    ```bash
-    pip install pyinstaller
-    ```
+```bash
+pip install pyinstaller
+```
 
 -   **Windows**
 
