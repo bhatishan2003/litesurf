@@ -2,16 +2,18 @@
 
 A simple Python CLI tool to create a basic web browser.
 
+![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)
 [![License](https://img.shields.io/github/license/bhatishan2003/litesurf)](LICENSE)
+[![Python CI](https://github.com/bhatishan2003/litesurf/actions/workflows/python-app.yml/badge.svg)](https://github.com/bhatishan2003/litesurf/actions/workflows/python-app.yml)
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Installation](#installation)
-  - [Create and activate a virtual environment:](#create-and-activate-a-virtual-environment)
-- [Usage](#usage)
-  - [Command Line Usage](#command-line-usage)
-- [Building Standalone Executables with PyInstaller](#building-standalone-executables-with-pyinstaller)
-  - [1. Install PyInstaller](#1-install-pyinstaller)
+-   [Installation](#installation)
+    -   [Create and activate a virtual environment:](#create-and-activate-a-virtual-environment)
+-   [Usage](#usage)
+    -   [Command Line Usage](#command-line-usage)
+-   [Building Standalone Executables with PyInstaller](#building-standalone-executables-with-pyinstaller)
+    -   [1. Install PyInstaller](#1-install-pyinstaller)
 
 ---
 
@@ -72,10 +74,12 @@ A simple Python CLI tool to create a basic web browser.
 
 -   Following commands should be entered to get a pop-up browse.
 
-    ```bash
-    litesurf
-    litesurf --file test.html
-    ```
+        ```bash
+        litesurf
+        litesurf --file test.html
+        ```
+
+![Demo](https://raw.githubusercontent.com/bhatishan2003/litesurf/main/assets/demo.gif)
 
 ## Building Standalone Executables with PyInstaller
 
