@@ -4,7 +4,7 @@ Installation
 - **From pypi**:
   .. code-block:: bash
 
-    pip install litesurf
+     pip install litesurf
 
 - **Clone the repository**:
 
@@ -24,4 +24,3 @@ Installation
   .. code-block:: bash
 
       pip install -e .
-
