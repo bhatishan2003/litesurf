@@ -30,7 +30,6 @@ jobs:
           pip install .[test]
       - name: Run tests with coverage
         run: |
-          source .venv/bin/activate
           pytest --cov=minibrowser --cov-report=xml --cov-report=term
 
       - name: Upload coverage to Codecov
