@@ -6,6 +6,7 @@ A simple Python CLI tool to create a basic web browser.
 [![PyPI version](https://img.shields.io/pypi/v/litesurf.svg?color=blue)](https://pypi.org/project/litesurf/)
 [![License](https://img.shields.io/github/license/bhatishan2003/litesurf)](LICENSE)
 [![Python CI](https://github.com/bhatishan2003/litesurf/actions/workflows/python-app.yml/badge.svg)](https://github.com/bhatishan2003/litesurf/actions/workflows/python-app.yml)
+[![Build and Deploy Sphinx Docs](https://github.com/bhatishan2003/litesurf/actions/workflows/sphinx.yml/badge.svg)](https://github.com/bhatishan2003/litesurf/actions/workflows/sphinx.yml)
 
 ![Demo](https://raw.githubusercontent.com/bhatishan2003/litesurf/main/assets/demo.gif)
 
