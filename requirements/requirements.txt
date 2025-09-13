@@ -1,5 +1,6 @@
 colorama
 dukpy
 Pillow
+pyinstaller
 requests
 rich

@@ -6,10 +6,12 @@ A simple Python CLI tool to create a basic web browser.
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Installation](#installation)
-  - [Create and activate a virtual environment:](#create-and-activate-a-virtual-environment)
-- [Usage](#usage)
-  - [Command Line Usage](#command-line-usage)
+-   [Installation](#installation)
+    -   [Create and activate a virtual environment:](#create-and-activate-a-virtual-environment)
+-   [Usage](#usage)
+    -   [Command Line Usage](#command-line-usage)
+-   [Building Standalone Executables with PyInstaller](#building-standalone-executables-with-pyinstaller)
+    -   [1. Install PyInstaller](#1-install-pyinstaller)
 
 ---
 
@@ -73,3 +75,44 @@ A simple Python CLI tool to create a basic web browser.
     ```bash
     minibrowser
     ```
+
+## Building Standalone Executables with PyInstaller
+
+You can generate platform-specific standalone executables for your MiniBrowser project using **PyInstaller**.
+
+### 1. Install PyInstaller
+
+    ```bash
+    pip install pyinstaller
+    ```
+
+-   **Windows**
+
+    ```poweshell
+    pyinstaller --name minibrowser --onefile run_minibrowser.py
+    ```
+
+-   **MacOS**
+
+    ```bash
+    pyinstaller --name minibrowser --onefile --windowed run_minibrowser.py
+    ```
+
+    -   Convert the .app into a .dmg for distribution:
+
+        ```bash
+        hdiutil create -volname minibrowser -srcfolder dist/minibrowser.app -ov -format UDZO minibrowser.dmg
+        ```
+
+-   **Linux**
+
+    -   You can create a cross-platform source distribution from Windows (or Linux):
+
+        ```bash
+        python setup.py sdist
+        ```
+
+    -   Linux users can install it via:
+        ```bash
+        pip install minibrowser-0.0.1.tar.gz
+        ```
