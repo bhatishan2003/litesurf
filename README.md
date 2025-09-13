@@ -16,7 +16,7 @@ A simple Python CLI tool to create a basic web browser.
 -   [Usage](#usage)
     -   [Command Line Usage](#command-line-usage)
 -   [Building Standalone Executables with PyInstaller](#building-standalone-executables-with-pyinstaller)
-    -   [1. Install PyInstaller](#1-install-pyinstaller)
+    -   [Install PyInstaller](#install-pyinstaller)
 
 ---
 
@@ -92,7 +92,7 @@ A simple Python CLI tool to create a basic web browser.
 
 You can generate platform-specific standalone executables for your litesurf project using **PyInstaller**.
 
-### 1. Install PyInstaller
+### Install PyInstaller
 
 ```bash
 pip install pyinstaller
