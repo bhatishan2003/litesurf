@@ -22,6 +22,12 @@ A simple Python CLI tool to create a basic web browser.
 
 ## Installation
 
+-   From pypi
+
+    ```bash
+    pip install litesurf
+    ```
+
 -   Clone the repository:
 
     ```bash
