@@ -70,10 +70,11 @@ A simple Python CLI tool to create a basic web browser.
 
 ### Command Line Usage
 
--   Following commands should be entered to get weapop-up browse.
+-   Following commands should be entered to get a pop-up browse.
 
     ```bash
     minibrowser
+    minibrowser --file test.html
     ```
 
 ## Building Standalone Executables with PyInstaller
