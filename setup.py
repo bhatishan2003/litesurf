@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from setuptools import setup, find_packages
 from pathlib import Path
 
@@ -21,6 +19,7 @@ long_description = (BASE_DIR / "README.md").read_text(encoding="utf-8")
 
 # Optional test/dev requirements
 default_requires = read_requirements("requirements/requirements.txt")
+test_requires = read_requirements("requirements/requirements_test.txt")
 dev_requires = read_requirements("requirements/requirements_dev.txt")
 
 setup(
@@ -47,7 +46,7 @@ setup(
     ],
     python_requires=">=3.7",
     install_requires=default_requires,
-    extras_require={"dev": dev_requires},
+    extras_require={"test": test_requires, "dev": dev_requires, "all": test_requires + dev_requires},
     entry_points={
         "console_scripts": [
             "minibrowser=minibrowser.cli:cli",
