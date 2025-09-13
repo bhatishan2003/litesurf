@@ -26,7 +26,8 @@ litesurf documentation
 
 .. image:: https://github.com/bhatishan2003/litesurf/actions/workflows/sphinx.yml/badge.svg
    :target: https://github.com/bhatishan2003/litesurf/actions/workflows/sphinx.yml
-   :alt: Build and Deploy Sphinx docs
+   :alt: Build and Deploy Sphinx Docs
+
 
 
 
