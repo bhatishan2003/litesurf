@@ -1,13 +1,15 @@
-# minibrowser <!-- omit in toc -->
+# Minibrowser <!-- omit in toc -->
 
-A Python tool for creating a basic web browser.
+A simple Python CLI tool to create a basic web browser.
+
+[![License](https://img.shields.io/github/license/bhatishan2003/minibrowser)](LICENSE)
 
 ## Table of Contents <!-- omit in toc -->
 
--   [Installation](#installation)
--   [Usage](#usage)
-    -   [Basic Python Usage](#basic-python-usage)
-    -   [Command Line Usage](#command-line-usage)
+- [Installation](#installation)
+  - [Create and activate a virtual environment:](#create-and-activate-a-virtual-environment)
+- [Usage](#usage)
+  - [Command Line Usage](#command-line-usage)
 
 ---
 
@@ -16,17 +18,47 @@ A Python tool for creating a basic web browser.
 -   Clone the repository:
 
     ```bash
-    git clone https://github.com/bhatishan2003/minibrowser.git
+    git clone https://github.com/bhatishan2003/minibrowser
     cd minibrowser
     ```
 
--   Install the package:
+### Create and activate a virtual environment:
+
+1. **Create a Virtual Environment [Optional, but recommended]**
+
+    Run the following command to create a [virtual environment](https://docs.python.org/3/library/venv.html):
+
+    ```bash
+    python3 -m venv .venv
+    ```
+
+-   **Activate:**
+
+    -   **Windows (PowerShell):**
+
+        ```bash
+        .venv\Scripts\activate
+        ```
+
+    -   **Linux/Mac (Bash):**
+
+        ```bash
+        source .venv/bin/activate
+        ```
+
+-   **Deactivate:**
+
+    ```bash
+    deactivate
+    ```
+
+-   **Install the package:**
 
     ```bash
     pip install .
     ```
 
--   For development (editable mode):
+-   **For development (editable mode):**
 
     ```bash
     pip install -e .
@@ -34,16 +66,10 @@ A Python tool for creating a basic web browser.
 
 ## Usage
 
-### Basic Python Usage
-
-```bash
-python3 minibrowser.py
-```
-
 ### Command Line Usage
 
-```bash
-minibrowser
-minibrowser --file test.html
+-   Following commands should be entered to get weapop-up browse.
 
-```
+    ```bash
+    minibrowser
+    ```
