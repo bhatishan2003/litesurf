@@ -30,4 +30,4 @@ jobs:
           pip install .[test]
       - name: Run tests with coverage
         run: |
-          pytest --cov=minibrowser --cov-report=xml --cov-report=term
+          pytest --cov=litesurf --cov-report=xml --cov-report=term

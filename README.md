@@ -1,8 +1,8 @@
-# Minibrowser <!-- omit in toc -->
+# litesurf <!-- omit in toc -->
 
 A simple Python CLI tool to create a basic web browser.
 
-[![License](https://img.shields.io/github/license/bhatishan2003/minibrowser)](LICENSE)
+[![License](https://img.shields.io/github/license/bhatishan2003/litesurf)](LICENSE)
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -20,8 +20,8 @@ A simple Python CLI tool to create a basic web browser.
 -   Clone the repository:
 
     ```bash
-    git clone https://github.com/bhatishan2003/minibrowser
-    cd minibrowser
+    git clone https://github.com/bhatishan2003/litesurf
+    cd litesurf
     ```
 
 ### Create and activate a virtual environment:
@@ -73,13 +73,13 @@ A simple Python CLI tool to create a basic web browser.
 -   Following commands should be entered to get a pop-up browse.
 
     ```bash
-    minibrowser
-    minibrowser --file test.html
+    litesurf
+    litesurf --file test.html
     ```
 
 ## Building Standalone Executables with PyInstaller
 
-You can generate platform-specific standalone executables for your MiniBrowser project using **PyInstaller**.
+You can generate platform-specific standalone executables for your litesurf project using **PyInstaller**.
 
 ### 1. Install PyInstaller
 
@@ -90,19 +90,19 @@ pip install pyinstaller
 -   **Windows**
 
     ```poweshell
-    pyinstaller --name minibrowser --onefile run_minibrowser.py
+    pyinstaller --name litesurf --onefile run_litesurf.py
     ```
 
 -   **MacOS**
 
     ```bash
-    pyinstaller --name minibrowser --onefile --windowed run_minibrowser.py
+    pyinstaller --name litesurf --onefile --windowed run_litesurf.py
     ```
 
     -   Convert the .app into a .dmg for distribution:
 
         ```bash
-        hdiutil create -volname minibrowser -srcfolder dist/minibrowser.app -ov -format UDZO minibrowser.dmg
+        hdiutil create -volname litesurf -srcfolder dist/litesurf.app -ov -format UDZO litesurf.dmg
         ```
 
 -   **Linux**
@@ -115,5 +115,5 @@ pip install pyinstaller
 
     -   Linux users can install it via:
         ```bash
-        pip install minibrowser-0.0.1.tar.gz
+        pip install litesurf-0.0.1.tar.gz
         ```

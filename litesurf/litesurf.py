@@ -254,10 +254,10 @@ class JsSandbox:
 
 
 # ---------------------- Main Application ----------------------
-class MiniBrowser(tk.Tk):
+class litesurf(tk.Tk):
     def __init__(self, start_url=None, start_file=None):
         super().__init__()
-        self.title("MiniBrowser")
+        self.title("litesurf")
         self.geometry("900x700")
 
         # top controls
@@ -292,7 +292,7 @@ class MiniBrowser(tk.Tk):
             self.open_local(start_file)
 
     def set_title(self, t):
-        self.title("MiniBrowser - " + str(t))
+        self.title("litesurf - " + str(t))
 
     def clear(self):
         self.canvas.delete("all")
@@ -375,7 +375,7 @@ class MiniBrowser(tk.Tk):
 
 
 def main(start_url=None, start_file=None):
-    app = MiniBrowser(start_url=start_url, start_file=start_file)
+    app = litesurf(start_url=start_url, start_file=start_file)
     app.mainloop()
 
 

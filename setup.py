@@ -23,14 +23,14 @@ test_requires = read_requirements("requirements/requirements_test.txt")
 dev_requires = read_requirements("requirements/requirements_dev.txt")
 
 setup(
-    name="minibrowser",
+    name="litesurf",
     version="0.0.1",
     author="Ishan Bhat",
     author_email="ishan2003bhat@gmail.com",
     description="A simple CLI-based web browser and HTML parser",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/bhatishan2003/minibrowser",
+    url="https://github.com/bhatishan2003/litesurf",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -49,7 +49,7 @@ setup(
     extras_require={"test": test_requires, "dev": dev_requires, "all": test_requires + dev_requires},
     entry_points={
         "console_scripts": [
-            "minibrowser=minibrowser.cli:cli",
+            "litesurf=litesurf.cli:cli",
         ],
     },
     include_package_data=True,

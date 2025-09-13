@@ -2,10 +2,10 @@ import sys
 import os
 import pytest
 
-# ---------------- Ensure minibrowser can be imported ----------------
+# ---------------- Ensure litesurf can be imported ----------------
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from minibrowser import Node, SimpleHTMLParser, parse_style, parse_font_size, JsSandbox, SimpleRenderer
+from litesurf import Node, SimpleHTMLParser, parse_style, parse_font_size, JsSandbox, SimpleRenderer
 
 
 # ---------------- Node ----------------
@@ -125,7 +125,7 @@ def test_renderer_collect_text_handles_nested_links():
 
 # ---------------- CLI (real run) ----------------
 def test_cli_with_url(monkeypatch):
-    import minibrowser.cli as cli
+    import litesurf.cli as cli
 
     called = {}
 
@@ -142,7 +142,7 @@ def test_cli_with_url(monkeypatch):
 
 
 def test_cli_with_file(monkeypatch, tmp_path):
-    import minibrowser.cli as cli
+    import litesurf.cli as cli
 
     called = {}
 
@@ -162,7 +162,7 @@ def test_cli_with_file(monkeypatch, tmp_path):
 
 
 def test_cli_file_preferred(monkeypatch, tmp_path):
-    import minibrowser.cli as cli
+    import litesurf.cli as cli
 
     called = {}
 
