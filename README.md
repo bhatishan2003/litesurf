@@ -7,7 +7,7 @@ A simple Python CLI tool to create a basic web browser.
 [![License](https://img.shields.io/github/license/bhatishan2003/litesurf)](LICENSE)
 [![Python CI](https://github.com/bhatishan2003/litesurf/actions/workflows/python-app.yml/badge.svg)](https://github.com/bhatishan2003/litesurf/actions/workflows/python-app.yml)
 
-![Demo](assets/demo.gif)
+![Demo](https://raw.githubusercontent.com/bhatishan2003/litesurf/main/assets/demo.gif)
 
 ## Table of Contents <!-- omit in toc -->
 
