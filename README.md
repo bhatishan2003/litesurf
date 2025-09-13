@@ -6,12 +6,12 @@ A simple Python CLI tool to create a basic web browser.
 
 ## Table of Contents <!-- omit in toc -->
 
--   [Installation](#installation)
-    -   [Create and activate a virtual environment:](#create-and-activate-a-virtual-environment)
--   [Usage](#usage)
-    -   [Command Line Usage](#command-line-usage)
--   [Building Standalone Executables with PyInstaller](#building-standalone-executables-with-pyinstaller)
-    -   [1. Install PyInstaller](#1-install-pyinstaller)
+- [Installation](#installation)
+  - [Create and activate a virtual environment:](#create-and-activate-a-virtual-environment)
+- [Usage](#usage)
+  - [Command Line Usage](#command-line-usage)
+- [Building Standalone Executables with PyInstaller](#building-standalone-executables-with-pyinstaller)
+  - [1. Install PyInstaller](#1-install-pyinstaller)
 
 ---
 
