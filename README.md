@@ -77,10 +77,10 @@ A simple Python CLI tool to create a basic web browser.
 
 -   Following commands should be entered to get a pop-up browse.
 
-        ```bash
-        litesurf
-        litesurf --file test.html
-        ```
+    ```bash
+    litesurf
+    litesurf --file test.html
+    ```
 
 ## Building Standalone Executables with PyInstaller
 
